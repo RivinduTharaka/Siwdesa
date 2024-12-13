@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrendMicro.lk</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: left;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .logo {
+            width: 100px;
+            height: auto;
+            margin-left: 20px;
+        }
+        .header-title {
+            flex: 1;
+            text-align: center;
+        }
+        .header-title h1 {
+            margin: 0;
+        }
+        .search-container {
+            margin-right: 20px;
+        }
+        .search-container input[type=text] {
+            padding: 8px;
+            margin-top: 8px;
+            margin-bottom: 8px;
+            width: 200px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        .search-container input[type=text]:focus {
+            border: 2px solid #333;
+        }
+        .navbar {
+            background-color: #444;
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .navbar-right {
+            float: right;
+        }
+        .cover-photo {
+            position: relative;
+            width: 100%;
+            height: 800px;
+            background-image: url('Screenshot 2024-03-25 165755.png');
+            background-size: cover;
+            background-position: center;
+            margin-top: 20px;
+        }
+        .cover-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .button {
+            display: inline-block;
+            margin: 20px;
+            text-align: center;
+        }
+        .button img {
+            width: 150px;
+            height: auto;
+            margin-bottom: 10px;
+            transition: transform 0.3s;
+        }
+        .button img:hover {
+            transform: scale(1.1);
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 20px;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .content-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 100%;
+            max-width: 1200px;
+        }
+        .content-wrapper.reverse {
+            flex-direction: row-reverse;
+        }
+        .text-content {
+            flex: 1;
+            padding: 20px;
+            max-width: 600px;
+        }
+        .text-content h2 {
+            margin-bottom: 10px;
+        }
+        .text-content p {
+            margin-bottom: 20px;
+        }
+        .image-content {
+            flex: 1;
+            text-align: center;
+        }
+        .image-content img {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .image-content img:hover {
+            transform: scale(1.05);
+        }
+        .red-button {
+            background-color: red;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            display: inline-block;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .red-button:hover {
+            background-color: darkred;
+            transform: scale(1.05);
+        }
+        .features {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+        }
+        .feature-item {
+            flex: 1;
+            margin: 10px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .feature-item h3 {
+            margin-bottom: 10px;
+        }
+        .feature-item p {
+            color: #666;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+        }
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .footer-section {
+            flex: 1;
+            padding: 20px;
+            min-width: 300px;
+        }
+        .footer-section h2 {
+            margin-bottom: 15px;
+        }
+        .footer-section p {
+            margin-bottom: 15px;
+        }
+        .contact span {
+            display: block;
+            margin: 5px 0;
+        }
+        .socials a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #fff;
+            font-size: 20px;
+            transition: color 0.3s;
+        }
+        .socials a:hover {
+            color: #ddd;
+        }
+        .footer-bottom {
+            padding-top: 10px;
+            border-top: 1px solid #444;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img class="logo" src="tren.png" alt="Logo">
+        <div class="header-title">
+            <h1>TrendMicro.lk</h1>
+        </div>
+        <div class="search-container">
+            <input type="text" placeholder="Search...">
+        </div>
+    </header>
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Products</a>
+        <a href="#">Contact</a>
+        <div class="navbar-right">
+            <a href="#">Login</a>
+            <a href="#">Sign Up</a>
+        </div>
+    </div>
+    <div class="cover-photo">
+        <div class="cover-content">
+            <h1>Welcome to TrendMicro.lk</h1>
+            <p>Protect your devices with our security solutions</p>
+            <button class="red-button">Learn More</button>
+        </div>
+    </div>
+    <section>
+        <h1>Complete Device and Identity Protection</h1>
+        <p>Protect up to 10 devices with Premium Security Suite</p>
+        <div class="button">
+            <img src="er.png.png" alt="Internet Security">
+            <button class="red-button">Internet Security</button>
+        </div>
+        <div class="button">
+            <img src="6556875.png" alt="Mobile Security">
+            <button class="red-button">Mobile Security</button>
+        </div>
+        <div class="button">
+            <img src="we.png" alt="Maximum Security">
+            <button class="red-button">Maximum Security</button>
+        </div>
+    </section>
+    <div class="container">
+        <div class="content-wrapper">
+            <div class="text-content">
+                <h2>Trend Micro ID Protection</h2>
+                <p>Your identity is yours. Let’s keep it that way. ID Protection gives you all the tools needed to enhance your online privacy and safeguard against identity theft.</p>
+                <button class="red-button">Learn More</button>
+            </div>
+            <div class="image-content">
+                <img src="img_feature_02_desktop.png" alt="ID Protection Image 1">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="content-wrapper reverse">
+            <div class="image-content">
+                <img src="img_feature_01_desktop.png" alt="ID Protection Image 2">
+           
+            </div>
+            <div class="text-content">
+                <h2>Comprehensive Coverage</h2>
+                <p>Stay protected with our comprehensive security solutions designed to safeguard your identity and personal information across all your devices.</p>
+                <button class="red-button">Get Started</button>
+            </div>
+        </div>
+    </div>
+
+   
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2>TrendMicro.lk</h2>
+                <p>Protecting your digital world with our cutting-edge security solutions. Stay safe and secure online with Trend Micro.</p>
+                <div class="contact">
+                    <span><i class="fas fa-phone"></i> &nbsp; +94 123 456 789</span>
+                    <span><i class="fas fa-envelope"></i> &nbsp; info@trendmicro.lk</span>
+                </div>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 TrendMicro.lk | All rights reserved.
+        </div>
+    </footer>
+    
+    <!-- Optional FontAwesome Script for Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>
