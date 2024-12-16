@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { AppBar, Toolbar, Button, Typography, Box, IconButton, Menu, MenuItem } from '@mui/material';
 import { NavLink } from 'react-router-dom';
 import MenuIcon from '@mui/icons-material/Menu';
-import logo from '../images/tren.png'; // Ensure this path is correct
+import logo from '../images/sazukilogo-removebg-preview.png'; // Ensure this path is correct
 
 function Navbar() {
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = useState(null);
@@ -71,10 +71,8 @@ function Navbar() {
       <Toolbar sx={{ justifyContent: 'space-between' }}>
         <NavLink to="/" style={{ textDecoration: 'none' }}>
           <Box sx={{ display: 'flex', alignItems: 'center', cursor: 'pointer' }}>
-            <img src={logo} alt="Logo" style={{ marginRight: 8, width: '60px' }} />
-            <Typography variant="h5" color="inherit" sx={{ color: 'black', fontWeight: 'bold' }}>
-              Siwdesa
-            </Typography>
+            <img src={logo} alt="Logo" style={{  width: '150px' }} />
+            
           </Box>
         </NavLink>
 
