@@ -1,179 +1,41 @@
 import React from 'react';
-import { Typography, Box, Grid, useMediaQuery } from '@mui/material';
-import AccessTimeIcon from '@mui/icons-material/AccessTime';
-import BuildIcon from '@mui/icons-material/Build';
-import { useTheme } from '@mui/material/styles';
-import image1 from '../../images/Image_9-scaled.jpg';
-import image2 from '../../images/synchronized-movement-production-line-captured-dynamic-red-grey-shades-reflecting-coordinated-factory-.jpg';
-import image3 from '../../images/red-black-background-with-pattern-circles-words-red.jpg';
+import { Box, Typography, Button, Grid } from '@mui/material';
+import bg from "../../images/image3.jpg"; // Update with your actual image path
+
 
 function Sectwo() {
-  const theme = useTheme();
-  const isMobileView = useMediaQuery(theme.breakpoints.down('md'));
-
   return (
-    <Box
-      sx={{
-        backgroundColor: '#1a1a1a',
-        color: 'white',
-        py: 6,
-        px: { xs: 4, md: '5%' },
-        display: 'flex',
-        flexDirection: { xs: 'column', md: 'row' },
-        alignItems: 'center',
-        gap: 4,
-      }}
-    >
-      {/* Images Section */}
-      <Box
-        sx={{
-          display: 'grid',
-          gridTemplateColumns: { xs: '1fr', md: '2fr 1fr' },
-          gridTemplateRows: { xs: 'repeat(2, 1fr)', md: '1fr 1fr' },
-          gap: 2,
-          maxWidth: { xs: '100%', md: '50%' },
-          mr: { md: 5 },
-        }}
-      >
-        {/* Image 1 */}
-        <Box
-          component="img"
-          src={image1}
-          alt="Mechanic working"
-          sx={{
-            borderRadius: 2,
-            width: '100%',
-            height: { xs: 'auto', md: '100%' },
-            objectFit: 'cover',
-            gridColumn: { md: '1 / 2' },
-            gridRow: { md: '1 / 3' },
-          }}
-        />
-        {/* Image 2 */}
-        <Box
-          component="img"
-          src={image2}
-          alt="Car engine repair"
-          sx={{
-            borderRadius: 2,
-            width: '100%',
-            height: { xs: 'auto', md: '100%' },
-            objectFit: 'cover',
-            gridColumn: { md: '2 / 3' },
-            gridRow: { md: '1 / 2' },
-          }}
-        />
-        {/* Image 3 - only displayed in desktop view */}
-        {!isMobileView && (
-          <Box
-            component="img"
-            src={image3}
-            alt="Mechanic in workshop"
-            sx={{
-              borderRadius: 2,
-              width: '100%',
-              height: { xs: 'auto', md: '100%' },
-              objectFit: 'cover',
-              gridColumn: { md: '2 / 3' },
-              gridRow: { md: '2 / 3' },
-            }}
-          />
-        )}
-      </Box>
+    <Box sx={{ padding: '60px', backgroundColor: '#fff', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+      <Grid container spacing={4} sx={{ width: '1200px', alignItems: 'center' }}>
 
-      {/* Text Content Section */}
-      <Box
-        sx={{
-          maxWidth: { xs: '100%', md: '50%' },
-          textAlign: { xs: 'center', md: 'left' },
-          mt: { xs: 6, md: 0 },
-          pl: { md: 4 },
-        }}
-      >
-        <Typography
-          variant="h3"
-          sx={{
-            fontWeight: 'bold',
-            mb: 3,
-            lineHeight: 1.2,
-            color: 'white',
-            display: 'flex',
-            flexDirection: 'column',
-            fontSize: { xs: '1.8rem', md: '2.8rem' },
-          }}
-        >
-          <span>
-            Restoring Your Vehicle{' '}
-            <span style={{ fontStyle: 'italic', fontWeight: 'normal' }}>, One Part at a Time</span>
-          </span>
-        </Typography>
-
-        <Typography
-          variant="body1"
-          sx={{
-            mb: 4,
-            fontSize: '1.2rem',
-            color: 'rgba(255, 255, 255, 0.8)',
-            maxWidth: { xs: '100%', md: '80%' },
-          }}
-        >
-          Providing top-notch spare parts to keep your journey smooth and your vehicle in peak condition. Our commitment is your vehicle's performance.
-        </Typography>
-
-        <Grid container spacing={4} justifyContent={{ xs: 'center', md: 'flex-start' }}>
-          <Grid item xs={12} sm={6} md={6}>
-            <Box
-              sx={{
-                display: 'flex',
-                alignItems: 'center',
-                color: '#C8102E',
-                justifyContent: { xs: 'center', md: 'flex-start' },
-              }}
-            >
-              <BuildIcon fontSize="large" />
-              <Typography variant="h6" sx={{ fontWeight: 'bold', color: 'white', ml: 2 }}>
-                Modern Workshop
-              </Typography>
-            </Box>
-            <Typography
-              variant="body2"
-              sx={{
-                color: 'rgba(255, 255, 255, 0.7)',
-                mt: 1,
-                textAlign: { xs: 'center', md: 'left' },
-              }}
-            >
-              Equipped with advanced diagnostic tools and genuine spare parts to meet your vehicle’s needs. From repairs to upgrades, we’ve got you covered.
-            </Typography>
-          </Grid>
-
-          <Grid item xs={12} sm={6} md={6}>
-            <Box
-              sx={{
-                display: 'flex',
-                alignItems: 'center',
-                color: '#C8102E',
-                justifyContent: { xs: 'center', md: 'flex-start' },
-              }}
-            >
-              <AccessTimeIcon fontSize="large" />
-              <Typography variant="h6" sx={{ fontWeight: 'bold', color: 'white', ml: 2 }}>
-                Continues Support
-              </Typography>
-            </Box>
-            <Typography
-              variant="body2"
-              sx={{
-                color: 'rgba(255, 255, 255, 0.7)',
-                mt: 1,
-                textAlign: { xs: 'center', md: 'left' },
-              }}
-            >
-              Always here when you need us. Our experts are available around the clock to assist with inquiries, orders, or troubleshooting.
-            </Typography>
-          </Grid>
+      <Grid item xs={12} md={6}>
+          <Box>
+            <img src={bg} alt="Accident Repair" style={{ width: '100%' }} />
+          </Box>
         </Grid>
-      </Box>
+
+        
+        <Grid item xs={12} md={6}>
+          <Box>
+            <Box sx={{ backgroundColor: '#e00000', color: '#fff', display: 'inline-block', padding: '5px 10px', borderRadius: '3px', marginBottom: '10px', fontSize: '14px' }}>
+              Since <Typography component="span" fontWeight="bold">2013</Typography>
+            </Box>
+            <Typography variant="h4" sx={{ fontWeight: 'bold', marginBottom: '10px' }}>
+              We Are Accident Repair Experts
+            </Typography>
+            <Typography variant="h4" sx={{ fontWeight: 'bold', lineHeight: 1.4, marginBottom: '20px' }}>
+              WE ARE <span style={{ color: '#e00000' }}>BEST</span> AT WHAT WE DO
+            </Typography>
+            <Typography variant="body1" sx={{ marginBottom: '20px', lineHeight: 1.6 }}>
+              "We Put You Back on the Road in No Time." By swiftly executing necessary repairs, we live up to our commitment and have earned our reputation as the best in the business.
+            </Typography>
+            <Button variant="contained" sx={{ backgroundColor: '#e00000', ':hover': { backgroundColor: '#b00000' } }}>
+              LEARN MORE
+            </Button>
+          </Box>
+        </Grid>
+       
+      </Grid>
     </Box>
   );
 }

@@ -64,7 +64,6 @@ function Navbar() {
       sx={{
         // mt: 2,
         width: '100%',
-        // padding: '0 5%',
         background: 'white' // Set background color here if needed
       }}
     >

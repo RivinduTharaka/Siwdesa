@@ -50,15 +50,10 @@ function Home() {
       <Box>
         {/* First Section - Background Image Carousel */}
         <Secone/>
-
-        {/* Second Section - About Section */}
-        <Sectwo />
-
-        {/* Services Section */}
+        <Sectwo/>
         <Secthree/>
 
-        {/* contactus Section */}
-        <ContactUsHome/>
+        
       </Box>
     </>
   );
