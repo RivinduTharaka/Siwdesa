@@ -12,7 +12,7 @@ function Secthree() {
       py: 8,
       px: { xs: 4, md: '10%' },
       textAlign: 'center',
-      mb: 20,
+      // mb: 20,
     }}
   >
       {/* Section Header */}

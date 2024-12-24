@@ -11,12 +11,11 @@ function ContactUsHome() {
       {/* Hero Section with Background Image */}
       <Box
         sx={{
-          height: '20vh',
+          height: '30vh',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
           backgroundImage: `url(${backgroundImage})`,
-          backgroundImage: 'linear-gradient(to right, rgba(23, 10, 10, 1), rgba(23, 10, 10, 0.7) 50%, rgba(255, 0, 0, 0) 95%)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           color: '#ffffff',
@@ -33,7 +32,7 @@ function ContactUsHome() {
             left: 0,
             right: 0,
             bottom: 0,
-            backgroundColor: 'rgba(0, 0, 0, 0.6)',
+            // backgroundColor: 'rgba(0, 0, 0, 0.6)',
           }}
         />
 
@@ -65,7 +64,7 @@ function ContactUsHome() {
       </Box>
 
       {/* Contact Information and Map Section */}
-      <Box sx={{ backgroundColor: '#0f0f0f', color: 'white', pb: 6 }}>
+      <Box sx={{  color: 'white', pb: 6 }}>
         <Container>
           <Grid container spacing={4}>
             {/* Left side: Contact Cards stacked vertically */}

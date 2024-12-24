@@ -87,66 +87,7 @@ function AboutThree() {
         </Grid>
       </Container>
 
-      {/* New Section */}
-      <Box
-        sx={{
-          py: 8,
-          backgroundColor: '#1c1b1b',
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-          mt: 6,
-        }}
-      >
-        <Typography
-          variant="overline"
-          sx={{
-            color: '#ad0011',
-            letterSpacing: 2,
-            mb: 1,
-            display: 'flex',
-            alignItems: 'center',
-            fontSize: '0.875rem',
-          }}
-        >
-          <span style={{ width: 50, height: 1, backgroundColor: '#ad0011', marginRight: 8 }} />
-          Top Notch Solutions
-          <span style={{ width: 50, height: 1, backgroundColor: '#ad0011', marginLeft: 8 }} />
-        </Typography>
-
-        <Typography
-          variant="h3"
-          sx={{
-            fontWeight: 700,
-            fontSize: '3.0rem',
-            color: 'white',
-            textAlign: 'center',
-            lineHeight: 1.2,
-            mb: 3,
-          }}
-        >
-          The <span style={{ color: '#ad0011' }}>Best</span> <span style={{ fontStyle: 'italic' }}>Car Service</span> <br />
-          <span style={{ fontWeight: 300, fontStyle: 'italic', fontSize: '4.5rem' }}>Company</span> <span style={{ fontWeight: 700 }}>Since 2019</span>
-        </Typography>
-
-        <Button
-          variant="contained"
-          sx={{
-            backgroundColor: '#ad0011',
-            color: 'white',
-            mt: 3,
-            px: 4,
-            py: 1.5,
-            fontSize: '1rem',
-            fontWeight: 'bold',
-            textTransform: 'uppercase',
-            borderRadius: '20px',
-          }}
-          onClick={() => navigate('/products')} // Navigate to the products page
-        >
-          Our Products
-        </Button>
-      </Box>
+    
     </Box>
   );
 }

@@ -15,14 +15,16 @@ function LogoGrid() {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#0d0d0d',
+        backgroundColor: '',
         py: 4,
+        mt:5,
+        mb:5
         
       }}
     >
       <Container
         sx={{
-          backgroundColor: '#1b1b1b',
+          backgroundColor: 'rgb(0,0,0,0.1)',
           borderRadius: 2,
           
           display: 'flex',

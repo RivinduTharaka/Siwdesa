@@ -1,29 +1,15 @@
 import React, { useState } from 'react';
 import { AppBar, Toolbar, Typography, Box, IconButton, Button, Container, Grid } from '@mui/material';
-// import PhoneIcon from '@mui/icons-material/Phone';
-// import AccessTimeIcon from '@mui/icons-material/AccessTime';
-// import LocationOnIcon from '@mui/icons-material/LocationOn';
-// import FacebookIcon from '@mui/icons-material/Facebook';
-// import TwitterIcon from '@mui/icons-material/Twitter';
-// import YouTubeIcon from '@mui/icons-material/YouTube';
-// import PinterestIcon from '@mui/icons-material/Pinterest';
-// import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
-// import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
-// import BuildIcon from '@mui/icons-material/Build';
-// import FlashOnIcon from '@mui/icons-material/FlashOn';
+
 import backgroundImage1 from '../images/Image_9-scaled.jpg';
 import backgroundImage2 from '../images/Image_37-scaled.jpg';
-// import image1 from '../images/Image_9-scaled.jpg';
-// import image2 from '../images/Image_9-scaled.jpg';
-// import image3 from '../images/img1234.png';
-// import iconImage1 from '../images/bmw.png';
-// import iconImage2 from '../images/bnz.png';
-// import iconImage3 from '../images/Audi.png';
-// import iconImage4 from '../images/VW.png';
+
 import Navbar from '../components/Navbar';
 import Secone from './homePagesec/Secone';
 import Sectwo from './homePagesec/Sectwo';
 import Secthree from './homePagesec/Secthree';
+import Secfour from './homePagesec/Secfour';
+import SecFive from './homePagesec/SecFive';
 import ContactUsHome from './homePagesec/ContactUsHome';
 
 function Home() {
@@ -49,11 +35,13 @@ function Home() {
       <Navbar />
       <Box>
         {/* First Section - Background Image Carousel */}
-        <Secone/>
-        <Sectwo/>
-        <Secthree/>
+        <Secone />
+        <Sectwo />
+        <Secthree />
+        <Secfour />
+        <SecFive />
+        <ContactUsHome />
 
-        
       </Box>
     </>
   );

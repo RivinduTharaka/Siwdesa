@@ -8,12 +8,12 @@ import image3 from '../../images/ImagesPrime/img1.png';
 
 function Aboutone() {
   return (
-    <Box sx={{ backgroundColor: '#1b1b1b', color: '#ffffff'}}>
+    <Box sx={{ backgroundColor: '#1b1b1b', color: '#ffffff' }}>
       {/* Top Section with Background and Overlay */}
       <Box
         sx={{
           position: 'relative',
-          minHeight: '70vh',
+          minHeight: '80vh',
           backgroundImage: `url(${backgroundImage1})`,
           backgroundSize: 'cover',
           //   backgroundPosition: 'center',
@@ -40,10 +40,22 @@ function Aboutone() {
           {/* Breadcrumb Navigation */}
 
 
-          {/* Title */}
-          <Typography variant="h3" sx={{ fontWeight: 'bold', mb: 1 }}>
-            About us
-          </Typography>
+      =
+          <Typography
+          variant="h3"
+          sx={{
+            fontWeight: 700,
+            fontSize: '3.0rem',
+            color: 'white',
+            textAlign: 'center',
+            lineHeight: 1.2,
+            mb: 3,
+          }}
+        >
+          The <span style={{ color: '#ad0011' }}>Best</span> <span style={{ fontStyle: 'italic' }}>Car Repair</span> <br />
+          <span style={{ fontWeight: 300,  fontSize: '4.5rem' }}>Center</span> <span style={{ fontWeight: 700 }}>Since 2019</span>
+        </Typography>
+
 
           {/* Title underline */}
           <Box
@@ -58,71 +70,62 @@ function Aboutone() {
         </Container>
       </Box>
 
-      {/* Main Content Section */}
-      <Container sx={{ mt: 10 }}>
-        <Grid container spacing={4} alignItems="center">
-          {/* Left Side Images */}
-          <Grid item xs={12} md={6}>
-            <Grid >
+    {/* Main Content Section */}
+<Box sx={{ backgroundColor: 'white', py: 5 }}>
+  <Container>
+    <Grid container spacing={4} alignItems="center">
+      {/* Left Side Image */}
+      <Grid item xs={12} md={6}>
+        <Box
+          component="img"
+          src={image3} // Replace with your image source
+          alt="Team and car"
+          sx={{
+            width: '100%',
+            borderRadius: '10px',
+          }}
+        />
+      </Grid>
 
-              <Grid item xs={12}>
-                <Box
-                  component="img"
-                  src={image3}
-                  alt="3D printed car model"
-                  sx={{
-                    width: '90%',
-                    borderRadius: '10px',
-                    boxShadow: '0 4px 20px rgba(0, 0, 0, 0.5)',
-                  }}
-                />
-              </Grid>
-            </Grid>
-          </Grid>
-                   {/* Right Side Text Content */}
-          <Grid item xs={12} md={6}>
-            <Typography variant="h6" sx={{ color: '#C8102E', mb: 1, fontWeight: 'bold' }}>
-              About Us
-            </Typography>
-            <Typography variant="h3" sx={{ fontWeight: 'bold', mb: 4 }}>
-              Empowering Your Drive, <span style={{ fontStyle: 'italic', fontWeight: '300' }}> One Part</span> {' '}
-              <span style={{ fontStyle: 'italic', fontWeight: '300' }}>At A Time</span>
-            </Typography>
-            <Typography variant="body1" sx={{ mb: 3 }}>
-              At Prime Drive, we specialize in delivering premium spare parts for German vehicles, ensuring every drive feels like the first.
-            </Typography>
-            <Typography variant="body1" sx={{ mb: 3 }}>
-              Our passion lies in precision, quality, and reliability—values deeply rooted in German engineering.
+      {/* Right Side Text Content */}
+      <Grid item xs={12} md={6}>
+        <Typography
+          variant="h6"
+          sx={{
+            color: '#000000',
+            mb: 1,
+            fontWeight: 'bold',
+            textTransform: 'uppercase',
+            letterSpacing: 1,
+          }}
+        >
+          About Us
+        </Typography>
+        <Typography
+          variant="h3"
+          sx={{
+            fontWeight: 'bold',
+            mb: 3,
+            color: '#222',
+          }}
+        >
+          WE ARE <span style={{ color: '#C8102E' }}>SAZUKI</span>
+        </Typography>
+        <Typography variant="body1" sx={{ mb: 2, color: '#555' }}>
+          SAZUKI Garage is a renowned name in automotive excellence, specializing in comprehensive vehicle repairs and maintenance. Since our inception, we’ve been committed to bringing top-tier services to every car owner.
+        </Typography>
+        <Typography variant="body1" sx={{ mb: 2, color: '#555' }}>
+          At SAZUKI, we believe in precision, quality, and trust. From minor tune-ups to extensive bodywork, our expert team ensures that your car runs like new, every time you visit us.
+        </Typography>
+        <Typography variant="body1" sx={{ color: '#555' }}>
+          Equipped with cutting-edge tools and a passion for perfection, we strive to deliver unmatched automotive solutions. When you choose SAZUKI, you choose excellence and reliability for your vehicle.
+        </Typography>
+      </Grid>
+    </Grid>
+  </Container>
+</Box>
 
-              From seasoned car enthusiasts to first-time owners, we provide unmatched expertise and top-grade components for brands like BMW, Mercedes-Benz, Audi, and Volkswagen.
-            </Typography>
-            <Typography variant="body1" sx={{ mb: 4 }}>
-              We do everything we can to get your car repaired as quickly as possible. Except for compromising on
-              quality. That’s why we at Bosch Car Service only use high-quality spare parts. This way, we can always
-              ensure no loss of manufacturer’s warranty coverage for your vehicle. No matter which of our worldwide
-              workshops you go to.
-              When you choose us, you're not just buying a part; you're investing in performance, longevity, and trust.
 
-            </Typography>
-            {/* <Button
-              variant="contained"
-              sx={{
-                backgroundColor: '#C8102E',
-                color: '#ffffff',
-                fontWeight: 'bold',
-                borderRadius: '20px',
-                padding: '10px 20px',
-                '&:hover': {
-                  backgroundColor: '#a50c20',
-                },
-              }}
-              endIcon={<ArrowForwardIosIcon />}
-            >
-              Learn More
-            </Button> */}
-          </Grid>
-        </Grid>
-      </Container>
     </Box>
   );
 }

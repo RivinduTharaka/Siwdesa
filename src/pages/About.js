@@ -4,6 +4,8 @@ import Navbar from '../components/Navbar';
 import AboutOne from './aboutPageSec/AboutOne';
 import AboutTwo from './aboutPageSec/AboutTwo';
 import AboutThree from './aboutPageSec/AboutThree';
+import AboutFour from './aboutPageSec/AboutFour';
+import AboutFive from './aboutPageSec/AboutFive';
 
 function About() {
   const [bgIndex, setBgIndex] = useState(0);
@@ -16,9 +18,12 @@ function About() {
       <Box>
       
         <AboutOne/>
+        <AboutFour/>
+        <AboutFive/>
+    
         <AboutTwo/>
         <AboutThree/>
-
+    
 
 
        

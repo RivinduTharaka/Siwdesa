@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, Typography, useTheme } from '@mui/material';
-import { styled, keyframes } from '@mui/system';
-import bg from "../../images/sazukihomeimg2.jpg"; // Update with your actual image path
+import { styled, keyframes, width } from '@mui/system';
+import bg from "../../images/sazukihomeimg1.jpg"; // Update with your actual image path
 
 // Animation keyframes for the 3D pop-out effect
 const popOutLoop = keyframes`
@@ -26,14 +26,14 @@ const fadeUp = keyframes`
 const HeroSection = styled(Box)(({ theme }) => ({
   position: 'relative', // Relative for overlay positioning
   display: 'grid',
-  height: '95vh',
+  // height: '95vh',
   overflow: 'hidden', // Prevent animation overflow
 }));
 
 // Animated background styling
 const AnimatedBackground = styled(Box)(({ theme }) => ({
   position: 'absolute',
-  top: 0,
+  top: 0, // Starting point for positioning
   left: 0,
   right: 0,
   bottom: 0,
@@ -42,7 +42,23 @@ const AnimatedBackground = styled(Box)(({ theme }) => ({
   backgroundPosition: 'center',
   animation: `${popOutLoop} 5s infinite ease-in-out`, // 3D loop animation
   zIndex: 1, // Ensure it's behind the content
+  [theme.breakpoints.up('lg')]: {
+    height: '95vh', // Full height for large devices
+
+  },
+  [theme.breakpoints.between('md', 'lg')]: {
+    height: '85vh', // Slightly reduced for medium devices
+  },
+  [theme.breakpoints.down('md')]: {
+    height: '70vh', // Smaller height for tablets
+  },
+  [theme.breakpoints.down('sm')]: {
+    height: '35vh', // Let it display the full natural size of the image on small devices
+    backgroundRepeat: 'no-repeat', // Avoid tiling
+    marginTop: '50px', // Push image down for small devices
+  },
 }));
+
 
 // Static text box styling
 const TextBox = styled(Box)(({ theme }) => ({
@@ -64,22 +80,70 @@ const TextBox = styled(Box)(({ theme }) => ({
   },
 }));
 
-const TopicText = styled(Typography)(({ theme }) => ({
-  position: 'absolute',
-  top: '40%',
-  left: '50%',
-  transform: 'translate(-50%, -50%)',
-  zIndex: 3, // Ensure it's above the background and other content
-  fontSize: '10rem',
-  fontWeight: 900,
-  color: 'transparent', // Make the text color transparent
-  WebkitTextStroke: '2px white', // Define the white border of the text
-  textShadow: '2px 2px 10px rgba(0, 0, 0, 0.3)', // Add subtle shadow for the border
-  [theme.breakpoints.down('sm')]: {
-    fontSize: '3.5rem', // Smaller font size for mobile devices
-    WebkitTextStroke: '1px white', // Adjust stroke size for smaller text
+
+const letterAnimation = keyframes`
+  from {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+`;
+
+const LaptopText = styled(Typography)(({ theme }) => ({
+  color: 'white',
+  fontWeight: 500,
+  textAlign: 'center',
+  marginTop:"-40px",
+  textShadow: '2px 2px 5px rgba(0, 0, 0, 0.7)',
+  display: 'none', // Default hidden
+  overflow: 'hidden', // Prevent text overflow during animation
+  [theme.breakpoints.up('md', 'lg')]: {
+    display: 'block', // Only visible for laptops
+    fontSize: '3rem',
   },
+  '& span': {
+    display: 'inline-block',
+    opacity: 0, // Start invisible
+    animation: `${letterAnimation} 0.5s forwards`, // Animate opacity and position
+  },
+  '& span:nth-of-type(1)': { animationDelay: '0.1s' },
+  '& span:nth-of-type(2)': { animationDelay: '0.2s' },
+  '& span:nth-of-type(3)': { animationDelay: '0.3s' },
+  '& span:nth-of-type(4)': { animationDelay: '0.4s' },
+  '& span:nth-of-type(5)': { animationDelay: '0.5s' },
+  '& span:nth-of-type(6)': { animationDelay: '0.6s' },
+  '& span:nth-of-type(7)': { animationDelay: '0.7s' },
+  '& span:nth-of-type(8)': { animationDelay: '0.8s' },
+  '& span:nth-of-type(9)': { animationDelay: '0.9s' },
+  '& span:nth-of-type(10)': { animationDelay: '1s' },
+  '& span:nth-of-type(11)': { animationDelay: '1.1s' },
+  '& span:nth-of-type(12)': { animationDelay: '1.2s' },
+  '& span:nth-of-type(13)': { animationDelay: '1.3s' },
+  '& span:nth-of-type(14)': { animationDelay: '1.4s' },
+  '& span:nth-of-type(15)': { animationDelay: '1.5s' },
+  '& span:nth-of-type(16)': { animationDelay: '1.6s' },
+  '& span:nth-of-type(17)': { animationDelay: '1.7s' },
+  '& span:nth-of-type(18)': { animationDelay: '1.8s' },
+  '& span:nth-of-type(19)': { animationDelay: '1.9s' },
+  '& span:nth-of-type(20)': { animationDelay: '2s' },
+  '& span:nth-of-type(21)': { animationDelay: '2.1s' },
+  '& span:nth-of-type(22)': { animationDelay: '2.2s' },
+  '& span:nth-of-type(23)': { animationDelay: '2.3s' },
+  '& span:nth-of-type(24)': { animationDelay: '2.4s' },
+  '& span:nth-of-type(25)': { animationDelay: '2.5s' },
+  '& span:nth-of-type(26)': { animationDelay: '2.6s' },
+  '& span:nth-of-type(27)': { animationDelay: '2.7s' },
+  '& span:nth-of-type(28)': { animationDelay: '2.8s' },
+  '& span:nth-of-type(29)': { animationDelay: '2.9s' },
+  '& span:nth-of-type(30)': { animationDelay: '3s' },
+  '& span:nth-of-type(31)': { animationDelay: '3.1s' },
+  '& span:nth-of-type(32)': { animationDelay: '3.2s' },
+
 }));
+
 
 
 function Secone() {
@@ -89,17 +153,15 @@ function Secone() {
     <HeroSection>
       {/* Animated Background */}
       <AnimatedBackground />
-      <TopicText>
-        SAZUKI
-      </TopicText>
+
       {/* Static Text Content */}
       <TextBox>
-        <Typography 
-          variant="h2" 
-          component="h1" 
-          gutterBottom 
-          sx={{ 
-            lineHeight: '1.3', 
+        <Typography
+          variant="h2"
+          component="h1"
+          gutterBottom
+          sx={{
+            lineHeight: '1.3',
             color: 'white', // Pure white color
             fontWeight: 500, // Make it bold
             textShadow: '2px 2px 5px rgba(0, 0, 0, 0.7)',
@@ -112,7 +174,7 @@ function Secone() {
               lg: '50px', // for large devices
               xl: '60px'  // for extra large devices
             },
-            fontSize: { 
+            fontSize: {
               xs: '2.5rem', // for extra small devices
               sm: '3rem', // for small devices
               md: '4rem', // for medium devices
@@ -121,9 +183,16 @@ function Secone() {
             }
           }}
         >
-          Full Range of <br/> Car Care  Detailing
         </Typography>
+        <LaptopText>
+          {'Full Range of Car Care Detailing'.split('').map((char, index) => (
+            <span key={index}>{char === ' ' ? '\u00A0' : char}</span>
+          ))}
+        </LaptopText>
+
       </TextBox>
+
+
     </HeroSection>
   );
 }
