@@ -11,6 +11,8 @@ import Secthree from './homePagesec/Secthree';
 import Secfour from './homePagesec/Secfour';
 import SecFive from './homePagesec/SecFive';
 import ContactUsHome from './homePagesec/ContactUsHome';
+import SecSix from './homePagesec/SecSix';
+
 
 function Home() {
   const [bgIndex, setBgIndex] = useState(0);
@@ -40,7 +42,8 @@ function Home() {
         <Secthree />
         <Secfour />
         <SecFive />
-        <ContactUsHome />
+        {/* <ContactUsHome /> */}
+        <SecSix/>
 
       </Box>
     </>

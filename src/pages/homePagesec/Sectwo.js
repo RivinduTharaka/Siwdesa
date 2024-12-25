@@ -6,7 +6,7 @@ import bg from "../../images/image3.jpg"; // Update with your actual image path
 function Sectwo() {
   return (
     <Box sx={{ padding: '60px', backgroundColor: '#fff', display: 'flex', justifyContent: 'center', alignItems: 'center' ,  '@media (max-width: 600px)': {
-      marginTop: '-100px', // Move slightly up on mobile
+      marginTop: '-50px', // Move slightly up on mobile
     },}}>
       <Grid container spacing={4} sx={{ width: '1200px', alignItems: 'center' }}>
 
