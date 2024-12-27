@@ -40,7 +40,7 @@ function Aboutone() {
           {/* Breadcrumb Navigation */}
 
 
-      =
+      
           <Typography
           variant="h3"
           sx={{

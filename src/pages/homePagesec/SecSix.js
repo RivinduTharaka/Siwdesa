@@ -14,7 +14,7 @@ function SecSix() {
         alignItems: "center",
         justifyContent: "space-between",
         padding: "40px",
-        marginBottom:"20px"
+        marginBottom:"50px"
       }}
     >
       {/* Left Section - Image */}

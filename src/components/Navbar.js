@@ -30,7 +30,7 @@ function Navbar() {
       transformOrigin={{
         vertical: 'top',
         horizontal: 'right',
-        color:'black'
+        color: 'black'
       }}
       open={isMobileMenuOpen}
       onClose={handleMobileMenuClose}
@@ -39,10 +39,10 @@ function Navbar() {
         Home
       </MenuItem>
       <MenuItem component={NavLink} to="/about" onClick={handleMobileMenuClose}>
-        About 
+        About
       </MenuItem>
       <MenuItem component={NavLink} to="/whatwedo" onClick={handleMobileMenuClose}>
-       Services
+        Services
       </MenuItem>
       <MenuItem component={NavLink} to="/gallery" onClick={handleMobileMenuClose}>
         Gallery
@@ -70,20 +70,20 @@ function Navbar() {
       <Toolbar sx={{ justifyContent: 'space-between' }}>
         <NavLink to="/" style={{ textDecoration: 'none' }}>
           <Box sx={{ display: 'flex', alignItems: 'center', cursor: 'pointer' }}>
-            <img src={logo} alt="Logo" style={{  width: '150px' }} />
-            
+            <img src={logo} alt="Logo" style={{ width: '150px' }} />
+
           </Box>
         </NavLink>
 
-        <Box sx={{ display: { xs: 'none', md: 'flex' }, gap:2.5, alignItems: 'center' }}>
+        <Box sx={{ display: { xs: 'none', md: 'flex' }, gap: 2.5, alignItems: 'center' }}>
           <Button component={NavLink} to="/" sx={navLinkStyle}>
             Home
           </Button>
           <Button component={NavLink} to="/about" sx={navLinkStyle}>
-            About 
+            About
           </Button>
           <Button component={NavLink} to="/whatwedo" sx={navLinkStyle}>
-          Services
+            Services
           </Button>
           <Button component={NavLink} to="/gallery" sx={navLinkStyle}>
             Gallery
@@ -96,8 +96,10 @@ function Navbar() {
           </Button>
           <Button
             variant="contained"
-            component={NavLink}
-            to="/quote"
+            component="a"
+            href="https://wa.me/+94755701201"
+            target="_blank"
+            rel="noopener noreferrer"
             sx={{
               backgroundColor: '#C8102E',
               color: '#ffffff',
@@ -108,6 +110,7 @@ function Navbar() {
           >
             Get Quote
           </Button>
+
         </Box>
 
         <Box sx={{ display: { xs: 'flex', md: 'none' }, color: 'white' }}>

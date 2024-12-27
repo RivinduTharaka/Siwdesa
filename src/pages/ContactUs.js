@@ -7,6 +7,8 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import EmailIcon from '@mui/icons-material/Email';
 import idProtectionImage from '../images/Image_37-scaled.jpg'; // Replace with actual image path
 import Navbar from '../components/Navbar';
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+
 
 function Contact() {
   return (
@@ -15,69 +17,37 @@ function Contact() {
 
       {/* Hero Section */}
       <Box
+      sx={{
+        backgroundImage: `url(${idProtectionImage})`, // Replace with actual image path
+        color: '#fff', // White text
+        height: '40vh', // Full screen height
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+        textAlign: 'center',
+        position: 'relative',
+      }}
+    >
+      {/* Main Title */}
+      <Typography
+        variant="h3"
         sx={{
-          height: '50vh',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          backgroundImage: `url(${idProtectionImage})`, // Replace with actual image path
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          color: '#ffffff',
-          position: 'relative',
-          textAlign: 'center',
-          mb: 4,
+          fontWeight: 'bold',
+          marginTop: '60px',
         }}
       >
-        {/* Overlay */}
-        <Box
-          sx={{
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            right: 0,
-            bottom: 0,
-            backgroundColor: 'rgba(0, 0, 0, 0.6)',
-          }}
-        />
+        Contact Us
+      </Typography>
 
-        {/* Content */}
-        <Box
-          sx={{
-            position: 'relative',
-            zIndex: 1,
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-          }}
-        >
-          {/* Breadcrumbs */}
-          <Breadcrumbs
-            aria-label="breadcrumb"
-            sx={{ color: 'white', fontSize: '0.875rem', mb: 1 }}
-          >
-            <Link component={NavLink} to="/" color="inherit" underline="hover">
-              Home
-            </Link>
-            <Typography color="inherit">Contact Us</Typography>
-          </Breadcrumbs>
-
-          {/* Title */}
-          <Typography variant="h2" sx={{ fontWeight: 'bold', fontSize: '2.5rem' }}>
-            Contact Us
-          </Typography>
-
-          {/* Divider Line */}
-          <Box
-            sx={{
-              width: '50px',
-              height: '2px',
-              backgroundColor: '#C8102E',
-              mt: 2,
-            }}
-          />
-        </Box>
-      </Box>
+      {/* Downward Arrow */}
+      <KeyboardArrowDownIcon
+        sx={{
+          fontSize: '3rem',
+          marginTop: '20px',
+        }}
+      />
+    </Box>
 
       {/* Contact Information and Form Section */}
       <Box sx={{ backgroundColor: '#0f0f0f' }}>
