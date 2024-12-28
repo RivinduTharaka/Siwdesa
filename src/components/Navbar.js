@@ -47,8 +47,8 @@ function Navbar() {
       <MenuItem component={NavLink} to="/gallery" onClick={handleMobileMenuClose}>
         Gallery
       </MenuItem>
-      <MenuItem component={NavLink} to="/careers" onClick={handleMobileMenuClose}>
-        Careers
+      <MenuItem component={NavLink} to="/Projects" onClick={handleMobileMenuClose}>
+        Projects
       </MenuItem>
       <MenuItem component={NavLink} to="/contact" onClick={handleMobileMenuClose}>
         Contact
@@ -88,8 +88,8 @@ function Navbar() {
           <Button component={NavLink} to="/gallery" sx={navLinkStyle}>
             Gallery
           </Button>
-          <Button component={NavLink} to="/careers" sx={navLinkStyle}>
-            Careers
+          <Button component={NavLink} to="/Projects" sx={navLinkStyle}>
+          Projects
           </Button>
           <Button component={NavLink} to="/contact" sx={navLinkStyle}>
             Contact

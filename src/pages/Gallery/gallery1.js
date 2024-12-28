@@ -1,70 +1,58 @@
-import React, { useState, useEffect } from 'react';
-import { Box, Typography, Grid, Card, CardMedia } from '@mui/material';
+import React from 'react';
+import { Grid, Box, Typography } from '@mui/material';
 import image1 from '../../images/Image_37-scaled.jpg';
-import image2 from '../../images/Image_9-scaled.jpg';
+import image2 from '../../images/Image_37-scaled.jpg';
 import image3 from '../../images/Image_37-scaled.jpg';
 import image4 from '../../images/Image_37-scaled.jpg';
 import image5 from '../../images/Image_37-scaled.jpg';
+import image6 from '../../images/Image_37-scaled.jpg';
+import image7 from '../../images/Image_37-scaled.jpg';
 
 function Gallery1() {
-  const images = [
-    image1,
-    image2,
-    image3,
-    image4,
-    image5,
-  ];
-
-  const [visibleImages, setVisibleImages] = useState([]);
-
-  useEffect(() => {
-    let timeoutIds = [];
-    images.forEach((_, index) => {
-      const timeoutId = setTimeout(() => {
-        setVisibleImages((prev) => [...prev, images[index]]);
-      }, index * 500);
-      timeoutIds.push(timeoutId);
-    });
-
-    return () => {
-      timeoutIds.forEach(clearTimeout);
-    };
-  }, [images]);
+  const images = [image1, image2, image3, image4, image5, image6, image7];
 
   return (
-    <Box sx={{ padding: 4, backgroundColor: '#f4f4f9', textAlign: 'center' }}>
-      <Typography variant="h3" component="h1" gutterBottom sx={{ color: '#333' }}>
-        Workshop Gallery
+    <Box sx={{ padding: 3, marginTop: 6 }}>
+      <Typography
+        variant="h3"
+        sx={{
+          fontWeight: 700,
+          fontSize: '3.0rem',
+          color: 'white',
+          textAlign: 'center',
+          lineHeight: 1.2,
+          mb: 5,
+          backgroundColor: 'black',
+          padding: 4,
+        }}
+      >
+        Workshop Premises
       </Typography>
-      <Grid container spacing={3} justifyContent="center">
-        {visibleImages.map((image, index) => (
-          <Grid item xs={12} sm={6} md={4} key={index}>
-            <Card
-              sx={{
-                overflow: 'hidden',
-                borderRadius: 2,
-                boxShadow: 3,
-                transition: 'transform 0.3s ease, box-shadow 0.3s ease',
-                '&:hover': {
-                  transform: 'scale(1.05)',
-                  boxShadow: 6,
-                },
-              }}
-            >
-              <CardMedia
+      <Box sx={{ paddingX: 10 }}>
+        <Grid container spacing={2}>
+          {images.map((src, index) => (
+            <Grid item xs={12} sm={6} md={3} key={index}>
+              <Box
                 component="img"
-                image={image}
-                alt={`Workshop ${index + 1}`}
+                src={src}
+                alt={`Gallery item ${index + 1}`}
                 sx={{
                   width: '100%',
                   height: 'auto',
-                  animation: 'fadeIn 1s ease-out',
+                  borderRadius: 1,
+                  boxShadow: 3,
+                  objectFit: 'cover',
+                  transition: 'transform 0.3s ease, box-shadow 0.3s ease',
+                  '&:hover': {
+                    transform: 'scale(1.05)', // Slight zoom on hover
+                    boxShadow: '0px 8px 20px rgba(0, 0, 0, 0.3)', // Elevated shadow on hover
+                  },
                 }}
               />
-            </Card>
-          </Grid>
-        ))}
-      </Grid>
+            </Grid>
+          ))}
+        </Grid>
+      </Box>
     </Box>
   );
 }
