@@ -5,10 +5,9 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
 import Services from './pages/Services';
-import Products from './pages/Products'; // Main products page
+import Gallery from './pages/Gallery'; // Main Gallery page
 import Contact from './pages/ContactUs';
 import { Box } from '@mui/material';
-import ProductPage from './pages/ProductPage'; // Brand-specific products page
 
 function App() {
   return (
@@ -20,8 +19,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/whatwedo" element={<Services />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/products" element={<Products />} /> {/* Route for all products */}
-            <Route path="/products/:brand" element={<ProductPage />} /> {/* Dynamic route for brand products */}
+            <Route path="/gallery" element={<Gallery />} /> {/* Route for all Gallery */}
           </Routes>
         </Box>
         <Footer />
