@@ -1,0 +1,11 @@
+/* Change Swiper navigation arrows color */
+.swiper-button-next,
+.swiper-button-prev {
+  color: white; /* Set the arrow color to white */
+  opacity: 0.8; /* Optional: Slight transparency for a better look */
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  opacity: 1; /* Full opacity on hover */
+}

@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { AppBar, Toolbar, Typography, Box, IconButton, Button, Container, Grid } from '@mui/material';
 import Navbar from '../components/Navbar';
-import prgOne from './Projects/Project1';
+import One12 from './Projects/Project1';
+import One1 from './Projects/Project2';
 
 
-
-function Gallery() {
+function Projects() {
   const [bgIndex, setBgIndex] = useState(0);
 
   
@@ -14,12 +14,18 @@ function Gallery() {
     <>
       <Navbar />
       <Box>
+      <One12/>
       
-        <prgOne/>
+      <One1/>
       
+     
+    
+
+
+       
       </Box>
     </>
   );
 }
 
-export default Gallery;
+export default Projects;
