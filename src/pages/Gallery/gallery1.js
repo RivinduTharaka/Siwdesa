@@ -28,7 +28,12 @@ function Gallery1() {
       >
         Workshop Premises
       </Typography>
-      <Box sx={{ paddingX: 10 }}>
+      <Box
+        sx={{
+          paddingX: { xs: 2, sm: 4, md: 5, lg: 10 }, // Responsive horizontal padding
+
+        }}
+      >
         <Grid container spacing={2}>
           {images.map((src, index) => (
             <Grid item xs={12} sm={6} md={3} key={index}>
@@ -53,6 +58,7 @@ function Gallery1() {
           ))}
         </Grid>
       </Box>
+
     </Box>
   );
 }

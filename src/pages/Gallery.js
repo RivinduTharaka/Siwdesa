@@ -3,6 +3,7 @@ import { AppBar, Toolbar, Typography, Box, IconButton, Button, Container, Grid }
 import Navbar from '../components/Navbar';
 import GalleryOne from './Gallery/gallery1';
 import GalleryTwo from './Gallery/gallery2';
+import GalleryThree from './Gallery/gallery3';
 
 
 function Gallery() {
@@ -18,6 +19,7 @@ function Gallery() {
         <GalleryOne/>
    
         <GalleryTwo/>
+        <GalleryThree/>
      
     
 

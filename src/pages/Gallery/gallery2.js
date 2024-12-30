@@ -5,17 +5,22 @@ import truckImage from '../../images/lorry123-removebg-preview.png'; // Replace 
 function Gallery2() {
   return (
     <Box
-      sx={{
-        display: 'flex',
-        flexDirection: { xs: 'column', md: 'row' }, // Column for mobile, row for larger screens
-        justifyContent: 'space-between',
-        alignItems: 'center',
-        background: 'linear-gradient(to right, #FF0000 50%, #000000 50%)',
-        padding: { xs: 2, md: 4 },
-        position: 'relative',
-        overflow: 'hidden',
-        height: 'auto',
-      }}
+    sx={{
+      display: 'flex',
+      flexDirection: { xs: 'column', md: 'row' }, // Column for mobile, row for larger screens
+      justifyContent: 'space-between',
+      alignItems: 'center',
+      background: {
+        xs: 'linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(255, 0, 0, 0.8))', // Mobile view
+        md: 'linear-gradient(to right, rgba(255, 255, 255, 0.17) 50%, rgb(162, 0, 0) 50%)', // Larger screens
+      },
+      padding: { xs: 2, md: 4 },
+      position: 'relative',
+      overflow: 'hidden',
+      height: 'auto',
+      marginTop: 5,
+    }}
+    
     >
       {/* Image Section */}
       <Box
