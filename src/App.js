@@ -7,6 +7,7 @@ import About from './pages/About';
 import Services from './pages/Services';
 import Gallery from './pages/Gallery'; // Main Gallery page
 import Contact from './pages/ContactUs';
+import Projects from './pages/Projects';
 import { Box } from '@mui/material';
 
 function App() {
@@ -19,7 +20,8 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/whatwedo" element={<Services />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/gallery" element={<Gallery />} /> {/* Route for all Gallery */}
+            <Route path="/gallery" element={<Gallery />} /> 
+            <Route path="/Projects" element={<Projects />} /> 
           </Routes>
         </Box>
         <Footer />
