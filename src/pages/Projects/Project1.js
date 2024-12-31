@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Typography } from '@mui/material';
-import BackgroundImage from '../../images/Image_37-scaled.jpg'; // Import your image
+import BackgroundImage from '../../images/sazukihomeimg.jpg'; // Import your image
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
 
