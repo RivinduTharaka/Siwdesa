@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, Typography, Button, Grid } from '@mui/material';
 import bg from "../../images/image3.jpg"; // Update with your actual image path
-
+import { Link } from 'react-router-dom'; 
 
 function Sectwo() {
   return (
@@ -31,7 +31,12 @@ function Sectwo() {
             <Typography variant="body1" sx={{ marginBottom: '20px', lineHeight: 1.6 }}>
               "We Put You Back on the Road in No Time." By swiftly executing necessary repairs, we live up to our commitment and have earned our reputation as the best in the business.
             </Typography>
-            <Button variant="contained" sx={{ backgroundColor: '#e00000', ':hover': { backgroundColor: '#b00000' } }}>
+            <Button
+              variant="contained"
+              sx={{ backgroundColor: '#e00000', ':hover': { backgroundColor: '#b00000' } }}
+              component={Link} // Use Link component
+              to="/about" // Route to the About Us page
+            >
               LEARN MORE
             </Button>
           </Box>

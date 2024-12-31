@@ -2,6 +2,7 @@ import React from 'react';
 import img1 from "../../images/Image_37-scaled.jpg"; // Update with your actual image path
 import img2 from "../../images/homeimge.jpg"; // Update with your actual image path
 import { Box, Typography, Grid, Button } from '@mui/material';
+import { Link } from 'react-router-dom'; 
 
 function Secthree() {
   return (

@@ -3,6 +3,7 @@ import { AppBar, Toolbar, Typography, Box, IconButton, Button, Container, Grid }
 import Navbar from '../components/Navbar';
 import One12 from './Projects/Project1';
 import One1 from './Projects/Project2';
+import Project3 from './Projects/Project3';
 
 
 function Projects() {
@@ -15,6 +16,7 @@ function Projects() {
       <Navbar />
       <Box>
       <One12/>
+      <Project3/>
       
       <One1/>
       
