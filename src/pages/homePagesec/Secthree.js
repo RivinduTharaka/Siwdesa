@@ -22,6 +22,8 @@ function Secthree() {
         sx={{
           fontWeight: 'bold',
           mb: 2,
+
+          
           fontSize: { xs: '1.8rem', md: '2.8rem' },
         }}
       >
