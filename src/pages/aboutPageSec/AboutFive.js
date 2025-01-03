@@ -9,7 +9,10 @@ import 'swiper/css/pagination';
 // Import Images for the Swiper
 import image1 from '../../images/image1.jpg'; // Replace with your actual image paths
 import image2 from '../../images/image2.jpg';
-import image3 from '../../images/image3.jpg';
+import image3 from '../../images/whtwedo1.jpg';
+import image4 from '../../images/whtwedo2.jpg';
+import image5 from '../../images/whtwedo3.jpg';
+import image6 from '../../images/whtwedo4.png';
 
 function AboutFive() {
     return (
@@ -133,6 +136,79 @@ function AboutFive() {
                                 />
                             </Box>
                         </SwiperSlide>
+
+
+                        <SwiperSlide>
+                            <Box
+                                sx={{
+                                    width: '400px', // Fixed width for the card
+                                    height: '400px', // Fixed height for the card
+                                    margin: '0 auto', // Center the image in the slide
+                                    borderRadius: '10px',
+                                    overflow: 'hidden', // Ensures the image does not overflow
+                                }}
+                            >
+                                <img
+                                    src={image4}
+                                    alt="Car Repair 3"
+                                    style={{
+                                        width: '100%',
+                                        height: '100%',
+                                        objectFit: 'cover', // Ensures the image covers the container proportionally
+                                    }}
+                                />
+                            </Box>
+                        </SwiperSlide>
+
+
+                        <SwiperSlide>
+                            <Box
+                                sx={{
+                                    width: '400px', // Fixed width for the card
+                                    height: '400px', // Fixed height for the card
+                                    margin: '0 auto', // Center the image in the slide
+                                    borderRadius: '10px',
+                                    overflow: 'hidden', // Ensures the image does not overflow
+                                }}
+                            >
+                                <img
+                                    src={image5}
+                                    alt="Car Repair 3"
+                                    style={{
+                                        width: '100%',
+                                        height: '100%',
+                                        objectFit: 'cover', // Ensures the image covers the container proportionally
+                                    }}
+                                />
+                            </Box>
+                        </SwiperSlide>
+
+
+
+                        <SwiperSlide>
+                            <Box
+                                sx={{
+                                    width: '400px', // Fixed width for the card
+                                    height: '400px', // Fixed height for the card
+                                    margin: '0 auto', // Center the image in the slide
+                                    borderRadius: '10px',
+                                    overflow: 'hidden', // Ensures the image does not overflow
+                                }}
+                            >
+                                <img
+                                    src={image6}
+                                    alt="Car Repair 3"
+                                    style={{
+                                        width: '100%',
+                                        height: '100%',
+                                        objectFit: 'cover', // Ensures the image covers the container proportionally
+                                    }}
+                                />
+                            </Box>
+                        </SwiperSlide>
+
+
+
                     </Swiper>
                 </Grid>
             </Grid>

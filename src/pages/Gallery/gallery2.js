@@ -59,7 +59,7 @@ function Gallery2() {
           fontWeight="bold"
           sx={{ marginTop: 1, fontSize: { xs: '1.25rem', md: '1.75rem' } }}
         >
-          CALL: (+94) 77 760 3000
+          CALL: (+94) 766446464
         </Typography>
       </Box>
     </Box>

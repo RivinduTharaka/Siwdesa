@@ -17,8 +17,8 @@ function Service4() {
             description: "We focus on delivering results that not only meet but exceed your expectations, ensuring long-lasting quality.",
         },
         {
-            title: "2-Year Paint Warranty",
-            description: "Confidence in our work is reflected in our 2-year warranty, ensuring the durability and top-notch quality of our services.",
+            title: "Paint Warranty",
+            description: "Confidence in our work is reflected in our warranty, ensuring the durability and top-notch quality of our services.",
         },
     ];
 

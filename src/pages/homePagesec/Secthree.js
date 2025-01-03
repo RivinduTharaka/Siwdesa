@@ -2,20 +2,20 @@ import React from 'react';
 import img1 from "../../images/Image_37-scaled.jpg"; // Update with your actual image path
 import img2 from "../../images/homeimge.jpg"; // Update with your actual image path
 import { Box, Typography, Grid, Button } from '@mui/material';
-import { Link } from 'react-router-dom'; 
+import { Link } from 'react-router-dom';
 
 function Secthree() {
   return (
     <Box
-    sx={{
-      background: 'linear-gradient(to bottom, #0d0d0d 70%, #ffffff 50%)', // Gradient background
-      color: 'white',
-      py: 8,
-      px: { xs: 4, md: '10%' },
-      textAlign: 'center',
-      // mb: 20,
-    }}
-  >
+      sx={{
+        background: 'linear-gradient(to bottom, #0d0d0d 70%, #ffffff 50%)', // Gradient background
+        color: 'white',
+        py: 8,
+        px: { xs: 4, md: '10%' },
+        textAlign: 'center',
+        // mb: 20,
+      }}
+    >
       {/* Section Header */}
       <Typography
         variant="h3"
@@ -23,7 +23,7 @@ function Secthree() {
           fontWeight: 'bold',
           mb: 2,
 
-          
+
           fontSize: { xs: '1.8rem', md: '2.8rem' },
         }}
       >
@@ -82,7 +82,7 @@ function Secthree() {
                 justifyContent: 'center',
                 textAlign: { xs: 'center', md: 'left' },
                 width: { md: '50%' },
-                backgroundColor:"red"
+                backgroundColor: "red"
               }}
             >
               <Typography
@@ -98,6 +98,8 @@ function Secthree() {
                 Swift and efficient accident repair services to get you back on the road in no time.
               </Typography>
               <Button
+                component={Link} // Use Link as the component
+                to="/whatwedo" // Define the path to route
                 variant="contained"
                 sx={{
                   backgroundColor: 'red',
@@ -106,12 +108,13 @@ function Secthree() {
                   fontWeight: 'bold',
                   px: 4,
                   '&:hover': {
-                    backgroundColor: 'A60D24',
+                    backgroundColor: '#A60D24', // Slightly darkened color on hover
                   },
                 }}
               >
                 Learn More
               </Button>
+
             </Box>
           </Box>
         </Grid>
@@ -157,7 +160,7 @@ function Secthree() {
                 justifyContent: 'center',
                 textAlign: { xs: 'center', md: 'left' },
                 width: { md: '50%' },
-                backgroundColor:'red'
+                backgroundColor: 'red'
               }}
             >
               <Typography
@@ -168,11 +171,13 @@ function Secthree() {
               </Typography>
               <Typography
                 variant="body1"
-                sx={{ mb: 4}}
+                sx={{ mb: 4 }}
               >
                 Genuine spare parts to maintain your vehicle's quality and performance.
               </Typography>
               <Button
+                component={Link} // Use Link as the component
+                to="/whatwedo" // Define the path to route
                 variant="contained"
                 sx={{
                   backgroundColor: 'red',
@@ -181,12 +186,13 @@ function Secthree() {
                   fontWeight: 'bold',
                   px: 4,
                   '&:hover': {
-                    backgroundColor: 'red',
+                    backgroundColor: '#A60D24', // Slightly darkened color on hover
                   },
                 }}
               >
                 Learn More
               </Button>
+
             </Box>
           </Box>
         </Grid>

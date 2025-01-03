@@ -40,7 +40,7 @@ function SecSix() {
           With guaranteed safety and affordable rates
         </Typography>
         <Typography variant="h5"sx={{ fontWeight: "bold" }}>
-          CALL: (+94) 77 760 3000
+          CALL: (+94) 76 644 6464
         </Typography>
       </Grid>
     </Box>

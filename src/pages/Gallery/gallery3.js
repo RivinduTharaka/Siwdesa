@@ -70,7 +70,7 @@ function Gallery3() {
         variant="contained"
         size="large"
         component="a"
-        href="tel:+94755566658"
+        href="tel:+94766446464"
         sx={{
           backgroundColor: 'orange',
           color: 'white',
@@ -79,7 +79,7 @@ function Gallery3() {
           textDecoration: 'none',
         }}
       >
-        Call Us: +94 755566658
+        Call Us: +94 766 446 464
       </Button>
     </Box>
   );

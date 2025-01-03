@@ -18,48 +18,48 @@ function Contact() {
 
       {/* Hero Section */}
       <Box
-      sx={{
-        // backgroundImage: `url(${BackgroundImage})`, // Set the background image
-  backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${BackgroundImage})`,
-
-        backgroundRepeat: 'no-repeat', // Prevent image repetition
-        backgroundSize: 'cover', // Ensure the image covers the entire box
-        backgroundPosition: 'center', // Center the image
-        color: '#fff', // White text
-        height: '60vh', // 40% of the viewport height
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
-        textAlign: 'center',
-        position: 'relative',
-      }}
-    >
-      {/* Main Title */}
-      <Typography
-        variant="h3"
         sx={{
-          fontWeight: ' ',
-          marginTop: '60px',
-          fontSize: {
-            xs: '3rem', // Font size for small screens
-            sm: '3rem',   // Font size for medium screens
-            md: '4rem', // Font size for larger screens
-            lg: '5rem',   // Font size for extra-large screens
-          },
+          // backgroundImage: `url(${BackgroundImage})`, // Set the background image
+          backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${BackgroundImage})`,
+
+          backgroundRepeat: 'no-repeat', // Prevent image repetition
+          backgroundSize: 'cover', // Ensure the image covers the entire box
+          backgroundPosition: 'center', // Center the image
+          color: '#fff', // White text
+          height: '60vh', // 40% of the viewport height
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'center',
+          alignItems: 'center',
+          textAlign: 'center',
+          position: 'relative',
         }}
       >
-        
-        Contact Us
-      </Typography>
-      {/* Downward Arrow */}
-      <KeyboardArrowDownIcon
-        sx={{
-          fontSize: '3rem',
-          marginTop: '20px',
-        }}
-      />
-    </Box>
+        {/* Main Title */}
+        <Typography
+          variant="h3"
+          sx={{
+            fontWeight: ' ',
+            marginTop: '60px',
+            fontSize: {
+              xs: '3rem', // Font size for small screens
+              sm: '3rem',   // Font size for medium screens
+              md: '4rem', // Font size for larger screens
+              lg: '5rem',   // Font size for extra-large screens
+            },
+          }}
+        >
+
+          Contact Us
+        </Typography>
+        {/* Downward Arrow */}
+        <KeyboardArrowDownIcon
+          sx={{
+            fontSize: '3rem',
+            marginTop: '20px',
+          }}
+        />
+      </Box>
 
       {/* Contact Information and Form Section */}
       <Box sx={{ backgroundColor: '#0f0f0f' }}>
@@ -78,21 +78,21 @@ function Contact() {
                 <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', mb: 4 }}>
                   <PhoneIcon sx={{ fontSize: 40, color: '#C8102E', mb: 1 }} />
                   <Typography variant="h6" sx={{ fontWeight: 'bold' }}>Phone</Typography>
-                  <Typography variant="body2">+94 777 201 951</Typography>
+                  <Typography variant="body2">+94 766 446 464</Typography>
                 </Box>
 
                 <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', mb: 4 }}>
                   <LocationOnIcon sx={{ fontSize: 40, color: '#C8102E', mb: 1 }} />
                   <Typography variant="h6" sx={{ fontWeight: 'bold' }}>Location</Typography>
                   <Typography variant="body2" textAlign="center">
-                    269, high level road, Vijerama, Sri Lanka
+                    211/48, Colombo road Rattanapitiya, Boralesgamuwa, Sri Lanka, 10290
                   </Typography>
                 </Box>
 
                 <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', mb: 4 }}>
                   <EmailIcon sx={{ fontSize: 40, color: '#C8102E', mb: 1 }} />
                   <Typography variant="h6" sx={{ fontWeight: 'bold' }}>Email</Typography>
-                  <Typography variant="body2"></Typography>
+                  <Typography variant="body2">sazukiautoengineering@gmail.com</Typography>
                 </Box>
               </Box>
             </Grid>
@@ -186,20 +186,20 @@ function Contact() {
       {/* Embedded Google Map Section */}
       <Box sx={{ backgroundColor: '#0f0f0f', pb: 6, pt: 6 }}>
         <Container>
-         
-           <Box
-                component="iframe"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126730.07807650274!2d79.82933011962597!3d6.857257752825193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwNTEnMjYuMSJOIDc5wrA1NCczMi43IkU!5e0!3m2!1sen!2slk!4v1680916340342!5m2!1sen!2slk"
-                width="100%"
-                height="450px"
-                allowFullScreen=""
-                loading="lazy"
-                title="Google Map Location"
-                sx={{
-                  border: 0,
-                  borderRadius: '8px',
-                }}
-              />
+
+          <Box
+            component="iframe"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d137672.5751812057!2d79.92554070905076!3d6.715087558613022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25be4386670d7%3A0x43bfc3daba8a43c7!2sSazuki%20Auto%20Engineering%20(Pvt)%20Ltd!5e0!3m2!1sen!2slk!4v1735893344310!5m2!1sen!2slk" 
+            width="100%"
+            height="450px"
+            allowFullScreen=""
+            loading="lazy"
+            title="Google Map Location"
+            sx={{
+              border: 0,
+              borderRadius: '8px',
+            }}
+          />
         </Container>
       </Box>
     </Box>

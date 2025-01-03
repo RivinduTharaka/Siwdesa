@@ -18,17 +18,20 @@ function Service2() {
   return (
     <Box sx={{ padding: '50px', backgroundColor: '#f9f9f9', fontFamily: 'Arial, sans-serif' }}>
       <Box sx={{ marginBottom: '40px' }}>
-       
         <Typography variant="h4" sx={{ fontWeight: 'bold', marginBottom: '20px' }}>
-          Reliable and quality car repair services
+          Trusted and Professional Vehicle Repair Services
         </Typography>
         <Typography sx={{ color: '#555', lineHeight: 1.8, marginBottom: '10px' }}>
-          Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+          At our garage, we specialize in providing top-notch repair services tailored to meet the needs of every vehicle. With a team of experienced technicians and advanced tools, we ensure your vehicle is in the best hands.
+        </Typography>
+        <Typography sx={{ color: '#555', lineHeight: 1.8, marginBottom: '10px' }}>
+          Our services include General Repairs, Electrical Services, Engine Diagnostics, and Body Repairs. Whether it's a minor tune-up or a major overhaul, we guarantee quality workmanship and lasting results.
         </Typography>
         <Typography sx={{ color: '#555', lineHeight: 1.8 }}>
-          Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+          Experience the difference with our reliable services, ensuring your vehicle is safe, efficient, and road-ready. Visit us today for all your car repair needs!
         </Typography>
       </Box>
+
       <Grid container spacing={4}>
         {services.map((service, index) => (
           <Grid item xs={12} sm={6} md={3} key={index}>

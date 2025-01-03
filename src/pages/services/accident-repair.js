@@ -7,9 +7,9 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 // Import Images for the Swiper
-import image1 from '../../images/image1.jpg';
-import image2 from '../../images/image2.jpg';
-import image3 from '../../images/image3.jpg';
+import image1 from '../../images/whtwedo4.png';
+import image2 from '../../images/whtwedo5.jpg';
+import image3 from '../../images/whtwedo6.jpg';
 
 function AccidentRepair() {
     return (

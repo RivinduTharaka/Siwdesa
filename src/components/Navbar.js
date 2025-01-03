@@ -97,7 +97,7 @@ function Navbar() {
           <Button
             variant="contained"
             component="a"
-            href="https://wa.me/+94755701201"
+            href="https://wa.me/+94766446464"
             target="_blank"
             rel="noopener noreferrer"
             sx={{
