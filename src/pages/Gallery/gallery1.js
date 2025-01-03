@@ -2,13 +2,14 @@ import React from 'react';
 import { Box, Typography, Grid } from '@mui/material';
 import BackgroundImage from '../../images/sazukihomeimg1.jpg'; // Import your image
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
-import image1 from '../../images/Image_37-scaled.jpg';
-import image2 from '../../images/Image_37-scaled.jpg';
-import image3 from '../../images/Image_37-scaled.jpg';
-import image4 from '../../images/Image_37-scaled.jpg';
-import image5 from '../../images/Image_37-scaled.jpg';
-import image6 from '../../images/Image_37-scaled.jpg';
-import image7 from '../../images/Image_37-scaled.jpg';
+import image1 from '../../images/SAZUKI/10.jpg';
+import image2 from '../../images/SAZUKI/glr1.jpg';
+import image3 from '../../images/SAZUKI/1.jpg';
+import image4 from '../../images/SAZUKI/glr2.jpg';
+import image5 from '../../images/SAZUKI/AUDI3.jpg';
+import image6 from '../../images/SAZUKI/aqua4.jpg';
+import image7 from '../../images/SAZUKI/VEZAL4.jpg';
+// import image8 from '../../images/SAZUKI/10.jpg';
 
 function Project1() {
   const images = [image1, image2, image3, image4, image5, image6, image7];
@@ -67,22 +68,23 @@ function Project1() {
             {images.map((src, index) => (
               <Grid item xs={12} sm={6} md={3} key={index}>
                 <Box
-                  component="img"
-                  src={src}
-                  alt={`Gallery item ${index + 1}`}
-                  sx={{
-                    width: '100%',
-                    height: 'auto',
-                    borderRadius: 1,
-                    boxShadow: 3,
-                    objectFit: 'cover',
-                    transition: 'transform 0.3s ease, box-shadow 0.3s ease',
-                    '&:hover': {
-                      transform: 'scale(1.05)', // Slight zoom on hover
-                      boxShadow: '0px 8px 20px rgba(0, 0, 0, 0.3)', // Elevated shadow on hover
-                    },
-                  }}
-                />
+  component="img"
+  src={src}
+  alt={`Gallery item ${index + 1}`}
+  sx={{
+    width: '100%', // Ensures the image fits its container width
+    height: '300px', // Fixed height
+    borderRadius: 1,
+    boxShadow: 3,
+    objectFit: 'cover', // Ensures the image covers the box without distortion
+    transition: 'transform 0.3s ease, box-shadow 0.3s ease',
+    '&:hover': {
+      transform: 'scale(1.05)', // Slight zoom on hover
+      boxShadow: '0px 8px 20px rgba(0, 0, 0, 0.3)', // Elevated shadow on hover
+    },
+  }}
+/>
+
               </Grid>
             ))}
           </Grid>
