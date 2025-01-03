@@ -7,41 +7,62 @@ import { Navigation } from 'swiper/modules';
 import './project2.css'; // Custom CSS for Swiper
 
 // Import Images
-import AudiBefore1 from '../../images/A1png.png';
-import AudiBefore2 from '../../images/A2.png';
-import AudiBefore3 from '../../images/A3.png';
-import AudiBefore4 from '../../images/A4.png';
-import AudiAfter1 from '../../images/A5.png';
-import AudiAfter2 from '../../images/A6.png';
-import AudiAfter3 from '../../images/A7.png';
-import AudiAfter4 from '../../images/A8.png';
+import SuzukiBefore1 from '../../images/SAZUKI/3.jpg';
+import SuzukiBefore2 from '../../images/SAZUKI/4.jpg';
+import SuzukiBefore3 from '../../images/SAZUKI/2.jpg';
+import SuzukiBefore4 from '../../images/SAZUKI/1.jpg';
+
+import EveryBefore1 from '../../images/SAZUKI/7.jpg';
+import EveryBefore2 from '../../images/SAZUKI/8.jpg';
+import EveryBefore3 from '../../images/SAZUKI/5.jpg';
+import EveryBefore4 from '../../images/SAZUKI/6.jpg';
+
+import AquaBefore1 from '../../images/SAZUKI/13.jpg';
+import AquaBefore2 from '../../images/SAZUKI/12.jpg';
+import AquaBefore3 from '../../images/SAZUKI/11.jpg';
+import AquaBefore4 from '../../images/SAZUKI/10.jpg';
+
+import BMWBefore1 from '../../images/SAZUKI/53.jpg';
+import BMWBefore2 from '../../images/SAZUKI/52.jpg';
+import BMWBefore3 from '../../images/SAZUKI/50.jpg';
+import BMWBefore4 from '../../images/SAZUKI/51.jpg';
 
 function Projects2() {
     const projects = [
         {
-            vehicle: { name: 'Audi', model: 'Q7' },
+            vehicle: { name: 'BMW', model: '520d' },
             images: [
-                AudiBefore1,
-                AudiBefore2,
-                AudiBefore3,
-                AudiBefore4,
-                AudiAfter1,
-                AudiAfter2,
-                AudiAfter3,
-                AudiAfter4,
+                BMWBefore1,
+                BMWBefore2,
+                BMWBefore3,
+                BMWBefore4,
             ],
         },
         {
-            vehicle: { name: 'BMW', model: '316i' },
+            vehicle: { name: 'Suzuki', model: 'Spacia' },
             images: [
-                AudiBefore1,
-                AudiBefore2,
-                AudiBefore3,
-                AudiBefore4,
-                AudiAfter1,
-                AudiAfter2,
-                AudiAfter3,
-                AudiAfter4,
+                SuzukiBefore1,
+                SuzukiBefore2,
+                SuzukiBefore3,
+                SuzukiBefore4,
+            ],
+        },
+        {
+            vehicle: { name: 'Suzuki', model: 'Every' },
+            images: [
+                EveryBefore1,
+                EveryBefore2,
+                EveryBefore3,
+                EveryBefore4,
+            ],
+        },
+        {
+            vehicle: { name: 'Toyota', model: 'Aqua' },
+            images: [
+                AquaBefore1,
+                AquaBefore2,
+                AquaBefore3,
+                AquaBefore4,
             ],
         },
     ];
@@ -68,7 +89,7 @@ function Projects2() {
                         borderRadius: '8px',
                         overflow: 'hidden',
                         boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)',
-                        backgroundColor: 'black'
+                        backgroundColor: 'black',
                     }}
                 >
                     {/* Left Side */}
@@ -101,8 +122,8 @@ function Projects2() {
                     <Box sx={{ width: '80%', backgroundColor: 'black' }}>
                         <Swiper
                             modules={[Navigation]}
-
                             slidesPerView={4}
+                            spaceBetween={10} // Add gap between slides
                             breakpoints={{
                                 320: { slidesPerView: 1 },
                                 768: { slidesPerView: 2 },
