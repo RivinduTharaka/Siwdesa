@@ -15,7 +15,7 @@ function Footer() {
             </Typography>
             <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: { xs: 'center', md: 'flex-start' }, gap: 1 }}>
               <Link
-                href="mailto:info@codeixer.com"
+                href="mailto:sazukiautoengineering@gmail.com"
                 underline="none"
                 sx={{
                   color: 'white',
